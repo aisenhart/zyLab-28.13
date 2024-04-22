@@ -1,7 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+#include "ItemToPurchase.h"
+
+int main()
+{
+
+  /* Type your code here */
 
   return 0;
 }
