@@ -4,6 +4,5 @@
 #include <string>
 using namespace std;
 
-/* Type your code here */
 
 #endif
