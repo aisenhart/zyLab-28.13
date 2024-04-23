@@ -15,6 +15,9 @@ Class itemToPurchase{
     SetQuantity();
 
     private:
+      string itemName = "none";
+      int itemPrice = 0;
+      int itemQuantity = 0;
       
 }
 
