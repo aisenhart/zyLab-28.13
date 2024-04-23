@@ -7,8 +7,8 @@ using namespace std;
 Class itemToPurchase{
   public: 
     GetName();
-    SetName();
-    SetQuantity();
+    GetName();
+    GetQuantity();
       
     SetName();
     SetPrice();
