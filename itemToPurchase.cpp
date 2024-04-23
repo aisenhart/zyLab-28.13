@@ -6,13 +6,26 @@ using namespace std;
 
 Class itemToPurchase{
   public: 
-    GetName();
-    GetName();
-    GetQuantity();
+    SetName(){
+    }
+    SetPrice(){
       
-    SetName();
-    SetPrice();
-    SetQuantity();
+    }
+      
+    SetQuantity(){
+      
+    }
+      
+    GetName(){
+    return itemName;
+    }
+    GetPrice(){
+    return itemPrice
+    }
+    GetQuantity(){
+    return itemQuantity;
+    }
+    
 
     private:
       string itemName = "none";
