@@ -1,46 +1,51 @@
 #include <iostream>
-#include <string>
-#include <limits>
+using namespace std;
+
 #include "ItemToPurchase.h"
 
 int main()
 {
-  ItemToPurchase item1, item2;
-  std::string name;
-  int price, quantity;
 
-  std::cout << "Item 1" << std::endl;
-  std::cout << "Enter the item name:" << std::endl;
-  std::getline(std::cin, name);
+  ItemToPurchase item1;
+  ItemToPurchase item2;
+
+  string name;
+  int price;
+  int quantity;
+
+  cout << "Item 1" << endl;
+  cout << "Enter the item name:" << endl;
+  getline(cin, name);
   item1.SetName(name);
 
-  std::cout << "Enter the item price:" << std::endl;
-  std::cin >> price;
+  cout << "Enter the item price:" << endl;
+  cin >> price;
   item1.SetPrice(price);
 
-  std::cout << "Enter the item quantity:" << std::endl;
-  std::cin >> quantity;
+  cout << "Enter the item quantity:" << endl;
+  cin >> quantity;
   item1.SetQuantity(quantity);
+  cout << endl;
+  cin.ignore();
 
-  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear the input buffer
-
-  std::cout << "Item 2" << std::endl;
-  std::cout << "Enter the item name:" << std::endl;
-  std::getline(std::cin, name);
+  cout << "Item 2" << endl;
+  cout << "Enter the item name:" << endl;
+  getline(cin, name);
   item2.SetName(name);
 
-  std::cout << "Enter the item price:" << std::endl;
-  std::cin >> price;
+  cout << "Enter the item price:" << endl;
+  cin >> price;
   item2.SetPrice(price);
 
-  std::cout << "Enter the item quantity:" << std::endl;
-  std::cin >> quantity;
+  cout << "Enter the item quantity:" << endl;
+  cin >> quantity;
   item2.SetQuantity(quantity);
+  cout << endl;
 
-  std::cout << "TOTAL COST" << std::endl;
-  std::cout << item1.GetName() << " " << item1.GetQuantity() << " @ $" << item1.GetPrice() << " = $" << item1.GetQuantity() * item1.GetPrice() << std::endl;
-  std::cout << item2.GetName() << " " << item2.GetQuantity() << " @ $" << item2.GetPrice() << " = $" << item2.GetQuantity() * item2.GetPrice() << std::endl;
-  std::cout << "Total: $" << (item1.GetQuantity() * item1.GetPrice() + item2.GetQuantity() * item2.GetPrice()) << std::endl;
-
+  cout << "TOTAL COST" << endl;
+  cout << item1.GetName() << " " << item1.GetQuantity() << " @ $" << item1.GetPrice() << " = $" << item1.GetQuantity() * item1.GetPrice() << endl;
+  cout << item2.GetName() << " " << item2.GetQuantity() << " @ $" << item2.GetPrice() << " = $" << item2.GetQuantity() * item2.GetPrice() << endl;
+  cout << endl;
+  cout << "Total: $" << item1.GetQuantity() * item1.GetPrice() + item2.GetQuantity() * item2.GetPrice() << endl;
   return 0;
 }
