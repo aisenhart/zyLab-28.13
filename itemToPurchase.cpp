@@ -3,10 +3,9 @@ using namespace std;
 
 #include "ItemToPurchase.h"
 
-
 ItemToPurchase::ItemToPurchase() : itemName("none"), itemPrice(0), itemQuantity(0) {}
 
-void ItemToPurchase::SetName(const string &name)
+void ItemToPurchase::SetName(const std::string &name)
 {
     itemName = name;
 }
@@ -21,7 +20,7 @@ void ItemToPurchase::SetQuantity(int quantity)
     itemQuantity = quantity;
 }
 
-string ItemToPurchase::GetName() const
+std::string ItemToPurchase::GetName() const
 {
     return itemName;
 }
@@ -35,35 +34,3 @@ int ItemToPurchase::GetQuantity() const
 {
     return itemQuantity;
 }
-
-Class itemToPurchase{
-  public: 
-    SetName(){
-    }
-    SetPrice(){
-      
-    }
-      
-    SetQuantity(){
-      
-    }
-      
-    GetName(){
-    return itemName;
-    }
-    GetPrice(){
-    return itemPrice
-    }
-    GetQuantity(){
-    return itemQuantity;
-    }
-    
-
-    private:
-      string itemName = "none";
-      int itemPrice = 0;
-      int itemQuantity = 0;
-      
-}
-
-
