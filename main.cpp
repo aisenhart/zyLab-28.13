@@ -50,3 +50,5 @@ int main()
   cout << "Total: $" << item1.GetQuantity() * item1.GetPrice() + item2.GetQuantity() * item2.GetPrice() << endl;
   return 0;
 }
+
+//Teamates Jonathan Scurtis and Andrew Isenhart
